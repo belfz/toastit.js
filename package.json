@@ -1,0 +1,24 @@
+{
+  "name": "toastit.js",
+  "version": "1.0.0",
+  "description": "toastit.js - an ultra-light, configurable HTML toast messages suitable for your webapp.",
+  "main": "dist/toastit.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/belfz/toastit.js.git"
+  },
+  "keywords": [
+    "toast",
+    "toastit",
+    "js"
+  ],
+  "author": "Marcin Baraniecki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/belfz/toastit.js/issues"
+  },
+  "homepage": "https://github.com/belfz/toastit.js#readme"
+}

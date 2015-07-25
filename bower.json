@@ -1,0 +1,28 @@
+{
+  "name": "toastit.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/belfz/toastit.js",
+  "authors": [
+    "Marcin Baraniecki <marcin.baraniecki@mttnow.com>"
+  ],
+  "description": "toastit.js - an ultra-light, configurable HTML toast messages suitable for your webapp.",
+  "main": "dist/toastit.min.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "toast",
+    "toastit",
+    "js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
