@@ -1,0 +1,91 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.8.3
+3 info using node@v0.12.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/mbara/projects/toastit/toastit.js',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/mbara/.npm/toastit.js/1.0.0/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/mbara/.npm/toastit.js/1.0.0/package.tgz',
+9 verbose tar pack   '/Users/mbara/projects/toastit/toastit.js' ]
+10 verbose tarball /Users/mbara/.npm/toastit.js/1.0.0/package.tgz
+11 verbose folder /Users/mbara/projects/toastit/toastit.js
+12 info prepublish toastit.js@1.0.0
+13 verbose addLocalTarball adding from inside cache /Users/mbara/.npm/toastit.js/1.0.0/package.tgz
+14 silly cache afterAdd toastit.js@1.0.0
+15 verbose afterAdd /Users/mbara/.npm/toastit.js/1.0.0/package/package.json not in flight; writing
+16 verbose afterAdd /Users/mbara/.npm/toastit.js/1.0.0/package/package.json written
+17 silly publish { name: 'toastit.js',
+17 silly publish   version: '1.0.0',
+17 silly publish   description: 'toastit.js - an ultra-light, configurable HTML toast messages suitable for your webapp.',
+17 silly publish   main: 'dist/toastit.min.js',
+17 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'git+https://github.com/belfz/toastit.js.git' },
+17 silly publish   keywords: [ 'toast', 'toastit', 'js' ],
+17 silly publish   author: { name: 'Marcin Baraniecki' },
+17 silly publish   license: 'MIT',
+17 silly publish   bugs: { url: 'https://github.com/belfz/toastit.js/issues' },
+17 silly publish   homepage: 'https://github.com/belfz/toastit.js#readme',
+17 silly publish   readme: '# toastit.js\n\nAn ultra-light, configurable HTML toast messages suitable for your webapp.\n\n```npm install toastit```\n```bower install toastit```\n\n## Demo\n\n<p data-height="268" data-theme-id="0" data-slug-hash="OVQewR" data-default-tab="result" data-user="belfz" class=\'codepen\'>See the Pen <a href=\'http://codepen.io/belfz/pen/OVQewR/\'>toast</a> by Marcin (<a href=\'http://codepen.io/belfz\'>@belfz</a>) on <a href=\'http://codepen.io\'>CodePen</a>.</p>\n<script async src="//assets.codepen.io/assets/embed/ei.js"></script>\n\n## Compatibility\n\ntoastit.js is compatible with AMD (require.js), CommonJS (like browserify) and as a global script in html.\n\n## Usage\n\nTo use toastit.js, wire in two files:\n- dist/toastit.min.js\n- dist/toastit.css\n\n```toastit(text, timeout, options)``` is then available as a function.\n\n## API\n\n### ```toastit(text, timeout, options)```\n- ```text``` - the text to display in the toast message.\n- ```timeout``` - duration [ms] of the animated toast messages (this parameter is optional - it defaults to 3000ms).\n- ```options``` - a hash (javascript object) with keys being css property names. Example: ```{fontSize: \'18px\'}```\n\n## Building\n\nThe styles were written in LESS (```src/toastit.less```). There\'s a gulpfile in the project root which handles two tasks:\n- LESS compilation to CSS followed by autoprefixer [last 2 versions]\n- Minification of JS code\n\nBuilt files are then put in ```dist``` directory.\n\n## License\nMIT',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: '86354f9ed288ec07b617e282e1b38cdbf680f855',
+17 silly publish   _id: 'toastit.js@1.0.0',
+17 silly publish   _shasum: '8caddb9d720acaee23342cf77a2c44e4c19679ba',
+17 silly publish   _from: '.' }
+18 silly mapToRegistry name toastit.js
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry uri https://registry.npmjs.org/toastit.js
+22 verbose publish registryBase https://registry.npmjs.org/
+23 silly publish uploading /Users/mbara/.npm/toastit.js/1.0.0/package.tgz
+24 verbose request uri https://registry.npmjs.org/toastit.js
+25 verbose request sending authorization for write operation
+26 info attempt registry request try #1 at 7:32:58 PM
+27 verbose request using bearer token for auth
+28 verbose request id e9a7f7248bd0aabd
+29 http request PUT https://registry.npmjs.org/toastit.js
+30 http 403 https://registry.npmjs.org/toastit.js
+31 verbose headers { 'content-type': 'application/json',
+31 verbose headers   'cache-control': 'max-age=60',
+31 verbose headers   'content-length': '95',
+31 verbose headers   'accept-ranges': 'bytes',
+31 verbose headers   date: 'Sat, 25 Jul 2015 17:32:59 GMT',
+31 verbose headers   via: '1.1 varnish',
+31 verbose headers   connection: 'keep-alive',
+31 verbose headers   'x-served-by': 'cache-fra1235-FRA',
+31 verbose headers   'x-cache': 'MISS',
+31 verbose headers   'x-cache-hits': '0',
+31 verbose headers   'x-timer': 'S1437845578.428656,VS0,VE714' }
+32 verbose request invalidating /Users/mbara/.npm/registry.npmjs.org/toastit.js on PUT
+33 error publish Failed PUT 403
+34 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : toastit.js
+34 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:247:14)
+34 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+34 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:368:22)
+34 verbose stack     at Request.emit (events.js:110:17)
+34 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1219:14)
+34 verbose stack     at Request.emit (events.js:129:20)
+34 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1167:12)
+34 verbose stack     at IncomingMessage.emit (events.js:129:20)
+34 verbose stack     at _stream_readable.js:908:16
+34 verbose stack     at process._tickCallback (node.js:355:11)
+35 verbose statusCode 403
+36 verbose pkgid toastit.js
+37 verbose cwd /Users/mbara/projects/toastit/toastit.js
+38 error Darwin 14.0.0
+39 error argv "node" "/usr/local/bin/npm" "publish"
+40 error node v0.12.2
+41 error npm  v2.8.3
+42 error code E403
+43 error "You cannot publish over the previously published version 1.0.0." : toastit.js
+44 error If you need help, you may report this error at:
+44 error     <https://github.com/npm/npm/issues>
+45 verbose exit [ 1, true ]
