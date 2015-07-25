@@ -24,9 +24,9 @@ To use toastit.js, wire in two files:
 
 ## API
 
-- ```toastit(text, timeout, options)```
+### ```toastit(text, timeout, options)```
 - ```text``` - the text to display in the toast message.
-- ```timeout`` - duration [ms] of the animated toast messages (this parameter is optional - it defaults to 3000ms).
+- ```timeout``` - duration [ms] of the animated toast messages (this parameter is optional - it defaults to 3000ms).
 - ```options``` - a hash (javascript object) with keys being css property names. Example: ```{fontSize: '18px'}```
 
 ## Building
