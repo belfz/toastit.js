@@ -3,7 +3,7 @@
 An ultra-light, configurable HTML toast messages suitable for your webapp.
 
 ```npm install toastit.js```
-```bower install toastit.js```
+```bower install toastit```
 
 ## Demo
 
