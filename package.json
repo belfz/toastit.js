@@ -4,7 +4,7 @@
   "description": "toastit.js - an ultra-light, configurable HTML toast messages suitable for your webapp.",
   "main": "dist/toastit.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/belfz/toastit.js/issues"
   },
-  "homepage": "https://github.com/belfz/toastit.js#readme"
+  "homepage": "https://github.com/belfz/toastit.js#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-less": "^4.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2"
+  }
 }
