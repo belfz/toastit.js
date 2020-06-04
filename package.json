@@ -1,6 +1,6 @@
 {
   "name": "toastit.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "toastit.js - an ultra-light, configurable HTML toast messages suitable for your webapp.",
   "main": "dist/toastit.min.js",
   "scripts": {
