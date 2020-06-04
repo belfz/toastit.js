@@ -21,6 +21,8 @@
     setTimeout(function () {
       document.body.removeChild(toast);
     }, timeout);
+
+    return toast;
   }
   
   return toastit;

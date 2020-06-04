@@ -8,7 +8,7 @@ gulp.task(':less', function () {
 		return gulp.src('./src/less/toastit.less')
 		.pipe(less())
 		.pipe(autoprefixer({
-    		browsers: ['last 2 versions'],
+    		overrideBrowserslist: ['last 2 versions'],
     		cascade: false
 	}))
 	.pipe(gulp.dest('./dist'));
@@ -21,4 +21,4 @@ gulp.task(':uglifyjs', function () {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('default', [':less', ':uglifyjs']);
+gulp.task('default', gulp.parallel(':less', ':uglifyjs'));
